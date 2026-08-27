@@ -1,11 +1,4 @@
--- Create database if required
-
--- Create Student table
-
--- Insert sample records
-
--- Update Karthik's DepartmentID
-
--- Delete StudentID 1002
-
--- Display all records
+ALTER TABLE Student
+ADD Email VARCHAR(30),
+    PhoneNumber NUMBER(10);
+DESCRIBE Student;
