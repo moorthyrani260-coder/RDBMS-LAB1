@@ -1,7 +1,11 @@
--- Create Marksheet table
+-- Step 1: Update Karthik's DepartmentID to 103
+UPDATE Student
+SET DepartmentID = 103
+WHERE StudentID = 1003; -- Alternatively: WHERE StudentName = 'Karthik'
 
--- Insert sample records
+-- Step 2: Delete the record for StudentID 1002
+DELETE FROM Student
+WHERE StudentID = 1002;
 
--- Display students with Marks > 80
-
--- Sort by Marks DESC
+-- Step 3: Verify the updated Student table
+SELECT * FROM Student;
